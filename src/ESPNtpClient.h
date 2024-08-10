@@ -399,6 +399,7 @@ public:
 #ifdef ESP8266
         if (udp) {
             udp_remove (udp);
+            udp = NULL;
         }
         // if (lastNtpResponsePacket) {
         //     pbuf_free (lastNtpResponsePacket);
